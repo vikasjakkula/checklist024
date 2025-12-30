@@ -166,13 +166,7 @@ export default class Home extends Component {
 	};
 
 	render() {
-		if (this.state.loading) {
-			return (
-				<div className="header">
-					<h1 style={{ color: '#fff' }}>Loading...</h1>
-				</div>
-			);
-		}
+		
 
 		if (!this.state.user) {
 			return <Auth user={this.state.user} onAuthChange={this.handleAuthChange} />;
